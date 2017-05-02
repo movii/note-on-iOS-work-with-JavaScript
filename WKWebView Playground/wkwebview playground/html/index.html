@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>UIWebView Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>WKWebView Playground</h1>
+    <h2 class="note">this page loaded locally on iPhone.</h2>
+  </header>
+  
+  <section class="section">
+    <h2>JS Alert()</h2>
+    <h3 class="note">
+      <pre>使用：
+        <code>
+          webView(_:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:)
+        </code>
+      </pre>
+    </h3>
+    <a href="javascript:;" class="btn btn--run-alert">run alert()</a>
+  </section>
+
+  <section class="section">
+    <h2>JS Confirm()</h2>
+    <h3 class="note">
+      <pre>使用：
+        <code>
+          webView(_:runJavaScriptConfirmPanelWithMessage:initiatedByFrame:completionHandler:)
+        </code>
+      </pre>
+    </h3>
+    <a href="javascript:;" class="btn btn--run-confirm">run confirm()</a>
+  </section>
+
+  <section class="section">
+    <h2>JS Prompt()</h2>
+    <h3 class="note">
+      <pre>使用：
+        <code>webView(_:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:)</code>
+      </pre>
+    </h3>
+    <a href="javascript:;" class="btn btn--run-prompt">run prompt()</a>
+  </section>
+
+  <span class="text-inserted-by-internal-javascript"></span>
+  <span class="text-inserted-by-external-javascript"></span>
+  <script src="index.js"></script>
+  <script src="native_invoke_javascript.js"></script>
+  <script>
+    // var internal = document.querySelector('.text-inserted-by-internal-javascript')
+    // internal.innerHTML = "text inserted by javascript inside html document";
+
+    (function (win, doc) {
+      const $ = (s, elem) => elem ? elem.querySelector(s) : doc.querySelector(s);
+      const addEvent = (n, e, h) =>  n.addEventListener(e, h, {capture: false});
+      
+      let run_alert_btn = $('.btn--run-alert')
+        , run_confirm_btn = $('.btn--run-confirm')
+        , run_prompt_btn = $('.btn--run-prompt') 
+      
+      // 添加 window.alert()
+      addEvent(run_alert_btn, 'click', e => alert('window.alert from JavaScript'));
+      // 添加 window.confirm()
+      addEvent(run_confirm_btn, 'click', e => win.confirm('window.confirm from JavaScript'));
+      // 添加 window.prompt()   
+      addEvent(run_prompt_btn, 'click', e => win.prompt('window.prompt from JavaScript'));
+
+    }(window, document));
+  </script>
+</body>
+
+</html>
