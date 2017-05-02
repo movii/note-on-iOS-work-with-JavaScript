@@ -14,7 +14,7 @@ let result4 = context.evaluateScript(
 
 let result2 = context.evaluateScript("sum(num1, num2)")
 
-let JSString1 = "(function () { return 'jsResult1'})"
+let JSString1 = "(function () { return 'jsResult1' })"
 let jsString2 = "function () { return 'jsResult2' }"
 
 context.evaluateScript(JSString1)
