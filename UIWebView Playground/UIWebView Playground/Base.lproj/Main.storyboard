@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gxk-db-d3p">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Remote-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" userLabel="Remote" customClass="LoadRemoteWebviewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXn-j3-Dvd">
+                                <rect key="frame" x="5" y="0.0" width="370" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-fm-Ey8">
+                                <rect key="frame" x="129" y="316" width="116" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Open  Remote"/>
+                                <connections>
+                                    <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadRemote" id="r9e-wo-R98"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Remote" id="gDq-1l-rKA" userLabel="Remote"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="759" y="-603"/>
+        </scene>
+        <!--Web View Play Ground View Controller-->
+        <scene sceneID="OSF-rA-P7F">
+            <objects>
+                <tabBarController id="Gxk-db-d3p" customClass="WebViewPlayGroundViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hBg-AS-UXd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dcX-Ad-mhu"/>
+                        <segue destination="yZj-t3-fj9" kind="relationship" relationship="viewControllers" id="B0z-Th-hxV"/>
+                        <segue destination="qrr-Nj-Vec" kind="relationship" relationship="viewControllers" id="h3T-1J-BfM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bS-2g-ozD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-382" y="142"/>
+        </scene>
+        <!--Local-->
+        <scene sceneID="bYj-1W-ovc">
+            <objects>
+                <viewController id="yZj-t3-fj9" userLabel="Local" customClass="LoadLocalWebViewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vSh-HI-ikM"/>
+                        <viewControllerLayoutGuide type="bottom" id="D3g-w6-ymv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yfS-Bs-3qj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-OF-IWm">
+                                <rect key="frame" x="141" y="92" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Open Local"/>
+                                <connections>
+                                    <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocal" id="h9J-Ux-Nod"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-jq-xa0">
+                                <rect key="frame" x="88" y="190" width="196" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Open Local with JS alert"/>
+                                <connections>
+                                    <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocalWithAlert" id="F0n-jn-K8o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using webview.stringByEvaluatingJavaScript ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-hT-ez8">
+                                <rect key="frame" x="42" y="226" width="299" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v6-H7-mGp">
+                                <rect key="frame" x="51" y="305" width="281" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="alert from local "/>
+                                <connections>
+                                    <segue destination="qsn-8i-fQI" kind="presentation" identifier="loadLocalWithAlertFromFile" id="zXy-Vd-uyP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="with function inside file.js" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-BZ-urI">
+                                <rect key="frame" x="105" y="341" width="164" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-so-UcS">
+                                <rect key="frame" x="76" y="415" width="224" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Intercept WebView Request"/>
+                                <connections>
+                                    <segue destination="qsn-8i-fQI" kind="presentation" identifier="interceptRequest" id="m9i-SX-gc0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using UIWebViewDelegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-m4-6Uh">
+                                <rect key="frame" x="102" y="448" width="170" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Local" id="lEp-yx-JfB" userLabel="Local"/>
+                    <connections>
+                        <outlet property="evalJsBtn" destination="pn3-jq-xa0" id="7ct-Ym-h7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4X4-c7-SBH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.60000000000002" y="141.67916041979012"/>
+        </scene>
+        <!--Web View Browser View Controller-->
+        <scene sceneID="BiU-qB-YSj">
+            <objects>
+                <viewController id="uaw-9J-UDj" customClass="WebViewBrowserViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6Lr-LS-N7n"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCg-or-bOz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4fu-QC-a2E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-6d-de8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uaw-9J-UDj" id="mnw-ed-CE3"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nCg-or-bOz" firstAttribute="top" secondItem="c9T-6d-de8" secondAttribute="bottom" id="Hlc-uW-VjH"/>
+                            <constraint firstItem="c9T-6d-de8" firstAttribute="top" secondItem="4fu-QC-a2E" secondAttribute="top" id="KUo-s6-T1p"/>
+                            <constraint firstItem="c9T-6d-de8" firstAttribute="leading" secondItem="4fu-QC-a2E" secondAttribute="leading" id="lIs-9V-aGW"/>
+                            <constraint firstAttribute="trailing" secondItem="c9T-6d-de8" secondAttribute="trailing" id="xlx-Je-j0t"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="CjY-XU-DeJ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TNG-dT-rJT">
+                            <connections>
+                                <action selector="cancel" destination="uaw-9J-UDj" id="wR4-1D-2jv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="9X9-Cg-Odg">
+                            <connections>
+                                <action selector="done" destination="uaw-9J-UDj" id="GX4-VZ-pv3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webviewBrowser" destination="c9T-6d-de8" id="qRE-IB-MQj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xEp-RJ-6TF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2442.4000000000001" y="141.67916041979012"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="jqn-gM-KLH">
+            <objects>
+                <viewController id="qrr-Nj-Vec" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ubo-hU-ZWn"/>
+                        <viewControllerLayoutGuide type="bottom" id="cp8-Gc-C2b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lyq-T6-T0W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EWK-K0-JKU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HjZ-wE-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="938"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aEM-Xr-uhG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qsn-8i-fQI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sbd-e9-X4a">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uaw-9J-UDj" kind="relationship" relationship="rootViewController" id="trE-Zu-Wft"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTO-pC-s2O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672.8" y="141.67916041979012"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="m9i-SX-gc0"/>
+    </inferredMetricsTieBreakers>
+</document>

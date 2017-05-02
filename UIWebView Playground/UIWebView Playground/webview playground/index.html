@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>UIWebView Playground</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>UIWebView Playground</h1>
+    <h2>this page loaded locally on iPhone.</h2>
+    <a href="Hello://lien">scheme: Hello://</a> 
+    <br>
+    <span class="text-inserted-by-internal-javascript"></span>
+    <br/>
+    <span class="text-inserted-by-external-javascript"></span>
+    <script src="index.js"></script>
+    <script>
+      var internal = document.querySelector('.text-inserted-by-internal-javascript')
+      internal.innerHTML = "text inserted by javascript inside html document";
+    </script>
+  </body>
+</html>
