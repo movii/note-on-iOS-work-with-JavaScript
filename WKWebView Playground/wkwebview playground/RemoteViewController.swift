@@ -80,7 +80,7 @@ class RemoteViewController: UIViewController {
   }
   
   override func viewDidLayoutSubviews() {
-    let url = URL(string: "https://www.google.com")!
+    let url = URL(string: "https://www.apple.com/cn/")!
     wkWebView.load(URLRequest(url: url))
     wkWebView.allowsBackForwardNavigationGestures = true
   }

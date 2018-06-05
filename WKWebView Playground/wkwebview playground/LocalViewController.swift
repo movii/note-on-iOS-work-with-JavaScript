@@ -101,7 +101,7 @@ extension LocalViewController: WKUIDelegate {
     let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
     
     ac.addTextField { textField in
-      if let defaultText = defaultText, defaultText.characters.count <= 0 {
+      if let stringValue = defaultText, !stringValue.isEmpty {
         textField.placeholder = "first textField's placeholder"
       }
       else {
