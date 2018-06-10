@@ -132,11 +132,11 @@ class RemoteViewController: UIViewController {
 extension RemoteViewController: WKNavigationDelegate {
   func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
     self.navigationItem.title = self.wkWebView.title
-    // wkWebView.evaluateJavaScript(
-     // "document.querySelector('#gb-main').style.backgroundColor = '#999'")
-    // wkWebView.evaluateJavaScript("alert('testing with UIAlertController')", completionHandler: nil)
-    // let jsString = "window.webkit.messageHandlers.WKWebViewApp.postMessage({'message1': 'this is message 1', 'message2': 'this is message2'})"
-    // wkWebView.evaluateJavaScript(jsString, completionHandler: nil)
+     wkWebView.evaluateJavaScript(
+      "document.querySelector('#gb-main').style.backgroundColor = '#999'")
+     wkWebView.evaluateJavaScript("alert('testing with UIAlertController')", completionHandler: nil)
+     let jsString = "window.webkit.messageHandlers.WKWebViewApp.postMessage({'message1': 'this is message 1', 'message2': 'this is message2'})"
+     wkWebView.evaluateJavaScript(jsString, completionHandler: nil)
   }
 }
 
