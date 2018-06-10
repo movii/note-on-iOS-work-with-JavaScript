@@ -32,5 +32,4 @@
 
   win.changePageBackgroundColor = changePageBackgroundColor
   win.addFakeSignalButton = addFakeSignalButton
-
 }(window, document));

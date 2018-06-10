@@ -61,7 +61,6 @@ extension NativeInvokeJavaScriptBrowserViewController: WKNavigationDelegate {
       case "SayHelloToWithReply":
         wkWebView.evaluateJavaScript("sayHelloToWithReply('Lien')") { (any,error) -> Void in
           print("\(any as! String)")
-          // self.dismiss(animated: true, completion: nil)
         }
       
       default:
