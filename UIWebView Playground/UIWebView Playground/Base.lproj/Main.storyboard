@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Gxk-db-d3p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Gxk-db-d3p">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Remote-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Remote" customClass="LoadRemoteWebviewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="BYZ-38-t0r" userLabel="Remote" customClass="LoadRemoteWebviewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXn-j3-Dvd">
-                                <rect key="frame" x="5" y="0.0" width="370" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nsg-fm-Ey8">
-                                <rect key="frame" x="129" y="316" width="116" height="34"/>
+                                <rect key="frame" x="129.5" y="301.5" width="116" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Open  Remote"/>
@@ -37,17 +29,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="xY3-Qh-Kph"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Remote" id="gDq-1l-rKA" userLabel="Remote"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="759" y="-603"/>
+            <point key="canvasLocation" x="757.60000000000002" y="-627.4362818590705"/>
         </scene>
         <!--Web View Play Ground View Controller-->
         <scene sceneID="OSF-rA-P7F">
             <objects>
-                <tabBarController id="Gxk-db-d3p" customClass="WebViewPlayGroundViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Gxk-db-d3p" customClass="WebViewPlayGroundViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hBg-AS-UXd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -56,84 +49,89 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="dcX-Ad-mhu"/>
                         <segue destination="yZj-t3-fj9" kind="relationship" relationship="viewControllers" id="B0z-Th-hxV"/>
-                        <segue destination="qrr-Nj-Vec" kind="relationship" relationship="viewControllers" id="h3T-1J-BfM"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bS-2g-ozD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-382" y="142"/>
+            <point key="canvasLocation" x="-17" y="142"/>
         </scene>
         <!--Local-->
         <scene sceneID="bYj-1W-ovc">
             <objects>
-                <viewController id="yZj-t3-fj9" userLabel="Local" customClass="LoadLocalWebViewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vSh-HI-ikM"/>
-                        <viewControllerLayoutGuide type="bottom" id="D3g-w6-ymv"/>
-                    </layoutGuides>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="yZj-t3-fj9" userLabel="Local" customClass="LoadLocalWebViewViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yfS-Bs-3qj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-OF-IWm">
-                                <rect key="frame" x="141" y="92" width="92" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-OF-IWm">
+                                <rect key="frame" x="141.5" y="92" width="92" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Open Local"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocal" id="h9J-Ux-Nod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-jq-xa0">
-                                <rect key="frame" x="88" y="190" width="196" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-jq-xa0">
+                                <rect key="frame" x="89.5" y="198" width="196" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Open Local with JS alert"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocalWithAlert" id="F0n-jn-K8o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using webview.stringByEvaluatingJavaScript ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-hT-ez8">
-                                <rect key="frame" x="42" y="226" width="299" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using webview.stringByEvaluatingJavaScript ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-hT-ez8">
+                                <rect key="frame" x="37.5" y="237" width="300" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v6-H7-mGp">
-                                <rect key="frame" x="51" y="305" width="281" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v6-H7-mGp">
+                                <rect key="frame" x="124.5" y="326" width="126" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="alert from local "/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="loadLocalWithAlertFromFile" id="zXy-Vd-uyP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="with function inside file.js" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-BZ-urI">
-                                <rect key="frame" x="105" y="341" width="164" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with function inside file.js" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-BZ-urI">
+                                <rect key="frame" x="105.5" y="365" width="164" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-so-UcS">
-                                <rect key="frame" x="76" y="415" width="224" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-so-UcS">
+                                <rect key="frame" x="75.5" y="454" width="224" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Intercept WebView Request"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="interceptRequest" id="m9i-SX-gc0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using UIWebViewDelegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-m4-6Uh">
-                                <rect key="frame" x="102" y="448" width="170" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using UIWebViewDelegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-m4-6Uh">
+                                <rect key="frame" x="102.5" y="493" width="170" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9v6-H7-mGp" firstAttribute="top" secondItem="xmd-hT-ez8" secondAttribute="bottom" constant="72" id="4GE-X0-bh9"/>
+                            <constraint firstItem="N2o-BZ-urI" firstAttribute="top" secondItem="9v6-H7-mGp" secondAttribute="bottom" constant="5" id="6sR-zR-xL5"/>
+                            <constraint firstItem="wMm-so-UcS" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="9gO-zs-TL8"/>
+                            <constraint firstItem="9v6-H7-mGp" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="AaV-rl-Zml"/>
+                            <constraint firstItem="wMm-so-UcS" firstAttribute="top" secondItem="N2o-BZ-urI" secondAttribute="bottom" constant="72" id="DGh-X2-bSM"/>
+                            <constraint firstItem="pn3-jq-xa0" firstAttribute="top" secondItem="xHJ-OF-IWm" secondAttribute="bottom" constant="72" id="DTG-NS-qoa"/>
+                            <constraint firstItem="xHJ-OF-IWm" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="FoT-lA-6ML"/>
+                            <constraint firstItem="xmd-hT-ez8" firstAttribute="top" secondItem="pn3-jq-xa0" secondAttribute="bottom" constant="5" id="HmE-vU-eJu"/>
+                            <constraint firstItem="xHJ-OF-IWm" firstAttribute="top" secondItem="hed-MO-PaW" secondAttribute="top" constant="72" id="IzY-Hj-Rau"/>
+                            <constraint firstItem="pn3-jq-xa0" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="ZIR-mz-zes"/>
+                            <constraint firstItem="8cI-m4-6Uh" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="nuj-Pv-95i"/>
+                            <constraint firstItem="N2o-BZ-urI" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="pAj-Dj-f9G"/>
+                            <constraint firstItem="xmd-hT-ez8" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="v2F-2d-VYc"/>
+                            <constraint firstItem="8cI-m4-6Uh" firstAttribute="top" secondItem="wMm-so-UcS" secondAttribute="bottom" constant="5" id="yf1-CQ-n3G"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hed-MO-PaW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Local" id="lEp-yx-JfB" userLabel="Local"/>
                     <connections>
@@ -147,17 +145,13 @@
         <!--Web View Browser View Controller-->
         <scene sceneID="BiU-qB-YSj">
             <objects>
-                <viewController id="uaw-9J-UDj" customClass="WebViewBrowserViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6Lr-LS-N7n"/>
-                        <viewControllerLayoutGuide type="bottom" id="nCg-or-bOz"/>
-                    </layoutGuides>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="uaw-9J-UDj" customClass="WebViewBrowserViewController" customModule="UIWebView_Playground" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4fu-QC-a2E">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9T-6d-de8">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="uaw-9J-UDj" id="mnw-ed-CE3"/>
@@ -166,11 +160,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="nCg-or-bOz" firstAttribute="top" secondItem="c9T-6d-de8" secondAttribute="bottom" id="Hlc-uW-VjH"/>
-                            <constraint firstItem="c9T-6d-de8" firstAttribute="top" secondItem="4fu-QC-a2E" secondAttribute="top" id="KUo-s6-T1p"/>
-                            <constraint firstItem="c9T-6d-de8" firstAttribute="leading" secondItem="4fu-QC-a2E" secondAttribute="leading" id="lIs-9V-aGW"/>
-                            <constraint firstAttribute="trailing" secondItem="c9T-6d-de8" secondAttribute="trailing" id="xlx-Je-j0t"/>
+                            <constraint firstItem="c9T-6d-de8" firstAttribute="centerX" secondItem="i85-29-JR4" secondAttribute="centerX" id="Dex-NM-eTa"/>
+                            <constraint firstItem="i85-29-JR4" firstAttribute="bottom" secondItem="c9T-6d-de8" secondAttribute="bottom" id="Hlc-uW-VjH"/>
+                            <constraint firstItem="c9T-6d-de8" firstAttribute="centerY" secondItem="i85-29-JR4" secondAttribute="centerY" id="SwI-km-7bF"/>
+                            <constraint firstItem="c9T-6d-de8" firstAttribute="leading" secondItem="i85-29-JR4" secondAttribute="leading" id="lIs-9V-aGW"/>
+                            <constraint firstItem="i85-29-JR4" firstAttribute="trailing" secondItem="c9T-6d-de8" secondAttribute="trailing" id="xlx-Je-j0t"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="i85-29-JR4"/>
                     </view>
                     <navigationItem key="navigationItem" id="CjY-XU-DeJ">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="TNG-dT-rJT">
@@ -192,32 +188,13 @@
             </objects>
             <point key="canvasLocation" x="2442.4000000000001" y="141.67916041979012"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="jqn-gM-KLH">
-            <objects>
-                <viewController id="qrr-Nj-Vec" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ubo-hU-ZWn"/>
-                        <viewControllerLayoutGuide type="bottom" id="cp8-Gc-C2b"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lyq-T6-T0W">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EWK-K0-JKU"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HjZ-wE-27o" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="758" y="938"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="aEM-Xr-uhG">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qsn-8i-fQI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sbd-e9-X4a">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -231,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="m9i-SX-gc0"/>
+        <segue reference="zXy-Vd-uyP"/>
     </inferredMetricsTieBreakers>
 </document>
