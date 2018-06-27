@@ -47,8 +47,8 @@ class UIWebViewWithJavaScriptCore:UIViewController {
     })
   }
   
-  func clearInput() {
-    context?.objectForKeyedSubscript("clearInput").call(withArguments: [])
+  @objc func clearInput() {
+    context!.objectForKeyedSubscript("clearInput").call(withArguments: [])
   }
 }
 

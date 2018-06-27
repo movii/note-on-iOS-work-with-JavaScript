@@ -33,8 +33,8 @@ class UIWebVIewWithJSExport: UIViewController, JSMethodsProtocol {
     webview.loadRequest(requestUrl)
   }
   
-  func clearInput() {
-    context?.objectForKeyedSubscript("clearInput").call(withArguments: [])
+  @objc func clearInput() {
+    context!.objectForKeyedSubscript("clearInput").call(withArguments: [])
   }
   
   func alert(message: String) {

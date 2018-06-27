@@ -58,7 +58,7 @@ class WKWebViewWithMessageHandler: UIViewController {
     wkWebView.load(URLRequest(url: fileURL))
   }
   
-  func clearInput () {
+  @objc func clearInput () {
     wkWebView.evaluateJavaScript("clearInput()")
   }
 }

@@ -40,7 +40,7 @@ class UIWebViewWithInterceptRequest: UIViewController {
     })
   }
   
-  func clearInput() {
+  @objc func clearInput() {
     webview.stringByEvaluatingJavaScript(from: "clearInput()")
   }
 }
@@ -74,7 +74,7 @@ extension UIWebViewWithInterceptRequest: UIWebViewDelegate {
       if let method = request.url?.host, method == "alert" {
         let queryItems = URLComponents(string: fullURL!)!.queryItems!
         let param1 = queryItems.filter({$0.name == "param1"}).first!
-        let value1:String = param1.value as! String
+        let value1:String = param1.value as String!
         
         alert(message: "\(value1)")
       }
