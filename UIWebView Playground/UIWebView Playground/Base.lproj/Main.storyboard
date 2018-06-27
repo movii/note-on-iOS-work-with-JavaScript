@@ -63,65 +63,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-OF-IWm">
-                                <rect key="frame" x="141" y="92" width="92" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHJ-OF-IWm">
+                                <rect key="frame" x="141.5" y="92" width="92" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Open Local"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocal" id="h9J-Ux-Nod"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-jq-xa0">
-                                <rect key="frame" x="88" y="190" width="196" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pn3-jq-xa0">
+                                <rect key="frame" x="89.5" y="198" width="196" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Open Local with JS alert"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="LoadLocalWithAlert" id="F0n-jn-K8o"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using webview.stringByEvaluatingJavaScript ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-hT-ez8">
-                                <rect key="frame" x="42" y="226" width="299" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using webview.stringByEvaluatingJavaScript ()" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-hT-ez8">
+                                <rect key="frame" x="37.5" y="237" width="300" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v6-H7-mGp">
-                                <rect key="frame" x="51" y="305" width="281" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9v6-H7-mGp">
+                                <rect key="frame" x="124.5" y="326" width="126" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="alert from local "/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="loadLocalWithAlertFromFile" id="zXy-Vd-uyP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="with function inside file.js" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-BZ-urI">
-                                <rect key="frame" x="105" y="341" width="164" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="with function inside file.js" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2o-BZ-urI">
+                                <rect key="frame" x="105.5" y="365" width="164" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-so-UcS">
-                                <rect key="frame" x="76" y="415" width="224" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMm-so-UcS">
+                                <rect key="frame" x="75.5" y="454" width="224" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Intercept WebView Request"/>
                                 <connections>
                                     <segue destination="qsn-8i-fQI" kind="presentation" identifier="interceptRequest" id="m9i-SX-gc0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="using UIWebViewDelegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-m4-6Uh">
-                                <rect key="frame" x="102" y="448" width="170" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="using UIWebViewDelegate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cI-m4-6Uh">
+                                <rect key="frame" x="102.5" y="493" width="170" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9v6-H7-mGp" firstAttribute="top" secondItem="xmd-hT-ez8" secondAttribute="bottom" constant="72" id="4GE-X0-bh9"/>
+                            <constraint firstItem="N2o-BZ-urI" firstAttribute="top" secondItem="9v6-H7-mGp" secondAttribute="bottom" constant="5" id="6sR-zR-xL5"/>
+                            <constraint firstItem="wMm-so-UcS" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="9gO-zs-TL8"/>
+                            <constraint firstItem="9v6-H7-mGp" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="AaV-rl-Zml"/>
+                            <constraint firstItem="wMm-so-UcS" firstAttribute="top" secondItem="N2o-BZ-urI" secondAttribute="bottom" constant="72" id="DGh-X2-bSM"/>
+                            <constraint firstItem="pn3-jq-xa0" firstAttribute="top" secondItem="xHJ-OF-IWm" secondAttribute="bottom" constant="72" id="DTG-NS-qoa"/>
+                            <constraint firstItem="xHJ-OF-IWm" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="FoT-lA-6ML"/>
+                            <constraint firstItem="xmd-hT-ez8" firstAttribute="top" secondItem="pn3-jq-xa0" secondAttribute="bottom" constant="5" id="HmE-vU-eJu"/>
+                            <constraint firstItem="xHJ-OF-IWm" firstAttribute="top" secondItem="hed-MO-PaW" secondAttribute="top" constant="72" id="IzY-Hj-Rau"/>
+                            <constraint firstItem="pn3-jq-xa0" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="ZIR-mz-zes"/>
+                            <constraint firstItem="8cI-m4-6Uh" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="nuj-Pv-95i"/>
+                            <constraint firstItem="N2o-BZ-urI" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="pAj-Dj-f9G"/>
+                            <constraint firstItem="xmd-hT-ez8" firstAttribute="centerX" secondItem="hed-MO-PaW" secondAttribute="centerX" id="v2F-2d-VYc"/>
+                            <constraint firstItem="8cI-m4-6Uh" firstAttribute="top" secondItem="wMm-so-UcS" secondAttribute="bottom" constant="5" id="yf1-CQ-n3G"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hed-MO-PaW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Local" id="lEp-yx-JfB" userLabel="Local"/>
@@ -199,6 +208,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="r9e-wo-R98"/>
+        <segue reference="zXy-Vd-uyP"/>
     </inferredMetricsTieBreakers>
 </document>
